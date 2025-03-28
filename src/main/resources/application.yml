@@ -1,3 +1,8 @@
 spring:
   application:
     name: newspace-eureka
+  cloud:
+    config:
+      name: newspace-eureka
+  config:
+    import: optional:configserver:${SPRING_CONFIG_IMPORT}
